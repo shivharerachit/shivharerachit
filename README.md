@@ -1,3 +1,14 @@
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+</div>
+<div align="center">
+  <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=shivharerachit&theme=dark&border_radius=12&card_width=800&card_height=250" alt="GitHub Streak" /></a>
+</div>
+
+
+![Rachit Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shivharerachit&layout=pie&theme=dark&size_weight=0&count_weight=1&align=center)
+<br>
+![Rachit's GitHub stats](https://github-readme-stats.vercel.app/api?username=shivharerachit\&rank_icon=github&theme=dark)
 ### Hi there 👋
 
 <!--
