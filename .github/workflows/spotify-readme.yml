@@ -2,25 +2,59 @@ name: Spotify Now Playing
 
 on:
   schedule:
-    - cron: "*/5 * * * *" # Runs every 5 minutes
+    - cron: "*/30 * * * *" # Runs every 30 minutes
   workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'
           
-      - name: Deploy Spotify API
-        run: |
-          git clone https://github.com/novatorem/novatorem.git
-          cd novatorem
-          vercel --confirm --token ${{ secrets.VERCEL_TOKEN }}
+      - name: Update Spotify Status
+        uses: actions/github-script@v6
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        with:
+          script: |
+            const axios = require('axios');
+            
+            async function updateSpotifyStatus() {
+              const response = await axios.post('https://accounts.spotify.com/api/token', 
+                new URLSearchParams({
+                  grant_type: 'refresh_token',
+                  refresh_token: process.env.SPOTIFY_REFRESH_TOKEN
+                }), {
+                headers: {
+                  'Authorization': 'Basic ' + Buffer.from(
+                    process.env.SPOTIFY_CLIENT_ID + ':' + process.env.SPOTIFY_CLIENT_SECRET
+                  ).toString('base64'),
+                  'Content-Type': 'application/x-www-form-urlencoded'
+                }
+              });
+              
+              const { access_token } = response.data;
+              
+              const nowPlaying = await axios.get('https://api.spotify.com/v1/me/player/currently-playing', {
+                headers: { 'Authorization': `Bearer ${access_token}` }
+              });
+              
+              // Update README with currently playing track
+              if (nowPlaying.data && nowPlaying.data.item) {
+                const track = nowPlaying.data.item;
+                const trackInfo = `🎵 Now Playing: ${track.name} by ${track.artists[0].name}`;
+                // Update your README.md here
+              }
+            }
+            
+            await updateSpotifyStatus();
