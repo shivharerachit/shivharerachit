@@ -19,42 +19,13 @@ jobs:
         with:
           node-version: '18'
           
+      - name: Install dependencies
+        run: npm install axios
+          
       - name: Update Spotify Status
-        uses: actions/github-script@v6
-        env:
-          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
-          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        uses: kittinan/spotify-github-profile@v1.1.2
         with:
-          script: |
-            const axios = require('axios');
-            
-            async function updateSpotifyStatus() {
-              const response = await axios.post('https://accounts.spotify.com/api/token', 
-                new URLSearchParams({
-                  grant_type: 'refresh_token',
-                  refresh_token: process.env.SPOTIFY_REFRESH_TOKEN
-                }), {
-                headers: {
-                  'Authorization': 'Basic ' + Buffer.from(
-                    process.env.SPOTIFY_CLIENT_ID + ':' + process.env.SPOTIFY_CLIENT_SECRET
-                  ).toString('base64'),
-                  'Content-Type': 'application/x-www-form-urlencoded'
-                }
-              });
-              
-              const { access_token } = response.data;
-              
-              const nowPlaying = await axios.get('https://api.spotify.com/v1/me/player/currently-playing', {
-                headers: { 'Authorization': `Bearer ${access_token}` }
-              });
-              
-              // Update README with currently playing track
-              if (nowPlaying.data && nowPlaying.data.item) {
-                const track = nowPlaying.data.item;
-                const trackInfo = `🎵 Now Playing: ${track.name} by ${track.artists[0].name}`;
-                // Update your README.md here
-              }
-            }
-            
-            await updateSpotifyStatus();
+          spotify_client_id: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          spotify_client_secret: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          spotify_refresh_token: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+          api_url: "https://spotify-github-profile.vercel.app/api"
