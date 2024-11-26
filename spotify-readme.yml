@@ -1,0 +1,26 @@
+name: Spotify Now Playing
+
+on:
+  schedule:
+    - cron: "*/5 * * * *" # Runs every 5 minutes
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          
+      - name: Deploy Spotify API
+        run: |
+          git clone https://github.com/novatorem/novatorem.git
+          cd novatorem
+          vercel --confirm --token ${{ secrets.VERCEL_TOKEN }}
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
