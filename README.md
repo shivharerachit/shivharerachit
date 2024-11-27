@@ -24,7 +24,7 @@ class AboutMe:
   
   [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=shivharerachit&theme=radical&border_radius=12&card_width=800&card_height=250)](https://git.io/streak-stats)
   
-  [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=shivharerachit&layout=pie&theme=radical&size_weight=0&count_weight=1)](https://github.com/shivharerachit)
+
   
 </div>
 
@@ -80,19 +80,3 @@ class AboutMe:
 </div>
 
 ---
-
-<div align="center">
-  
-### 💭 Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### 🎵 Currently Vibing To
-[![Spotify](https://novatorem-navy-ten.vercel.app/api/spotify)](https://open.spotify.com/user/31k53kaq6usqmzbvg6nzgopdtq2q)
-
-</div>
-
----
-
-<div align="center">
-  <img src="https://github.com/shivharerachit/shivharerachit/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
-</div>
