@@ -3,7 +3,7 @@
 <div align="center">
   <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="200"/>
   
-  [![Profile Views](https://komarev.com/ghpvc/?username=shivharerachit&color=blueviolet&style=flat-square)](https://github.com/shivharerachit)
+  [![Profile Views](https://komarev.com/ghpvc/?username=shivharerachit&color=grey&style=plastic)](https://github.com/shivharerachit)
 </div>
 
 ## 🚀 Quick Overview
@@ -14,15 +14,15 @@ class AboutMe:
         self.name = "Rachit Shivhare"
         self.education = "Sophomore @ Acropolis Institute of Technology"
         self.interests = ["Programming", "Technology", "Problem Solving"]
-        self.currently_learning = ["React", "Node.js", "System Design"]
-        self.fun_fact = "I can debug code faster than I can debug my life! 😄"
+        self.currently_learning = ["Python", "C++", "DSA", "JS"]
+        self.fun_fact = "There are two ways to write error-free programs; only the third one works 😄"
 ```
 
 ## 📊 GitHub Statistics
 
 <div align="center">
-  
-  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=shivharerachit&theme=radical&border_radius=12&card_width=800&card_height=250)](https://git.io/streak-stats)
+
+  [![GitHub Streak](https://github-readme-streak-stats-roan-kappa.vercel.app?user=shivharerachit&theme=city-lights&border_radius=20&mode=weekly)](https://git.io/streak-stats)
   
 
   
@@ -74,7 +74,7 @@ class AboutMe:
 
 <div align="center">
   
-[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rachit-shivhare-a9a224217/)
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shivharerachit/)
 [![GitHub](https://img.shields.io/badge/Follow_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/shivharerachit/)
 
 </div>
