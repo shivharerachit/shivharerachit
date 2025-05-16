@@ -9,7 +9,7 @@
 
 <table align="center">
   <tr>
-    <td style="padding: 10px;">
+    <td>
       <a href="https://www.credly.com/badges/83f71a5b-fe55-4203-bf49-da3104ef94c9/public_url">
         <img src="https://images.credly.com/size/680x680/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/image.png" width="120"/>
       </a>
@@ -39,6 +39,34 @@ class AboutMe:
         self.currently_learning = ["Python", "PHP", "C++", "DSA", "JS"]
         self.fun_fact = "There are two ways to write error-free programs; only the third one works 😄"
 ```
+<p align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shivharerachit&theme=github_dark" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=shivharerachit&theme=github_dark" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=shivharerachit&theme=github_dark" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=shivharerachit&theme=github_dark" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=shivharerachit&theme=github_dark&utcOffset=8" />
+</p>
+<!--
+<table align="center">
+  <tr>
+    <td>
+      ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shivharerachit&theme=github_dark)
+    </td>
+    <td>
+      ![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=shivharerachit&theme=github_dark)
+    </td>
+    <td>
+      ![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=shivharerachit&theme=github_dark)
+    </td>
+    <td>
+      ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=shivharerachit&theme=github_dark)
+    </td>
+    <td>
+      ![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=shivharerachit&theme=github_dark&utcOffset=8)
+    </td>
+  </tr>
+</table>
+-->
 
 <!-- ## 📊 GitHub Statistics
 
