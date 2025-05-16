@@ -6,6 +6,28 @@
   [![Profile Views](https://komarev.com/ghpvc/?username=shivharerachit&color=grey&style=plastic)](https://github.com/shivharerachit)
 </div>
 
+
+<table align="center">
+  <tr>
+    <td style="padding: 10px;">
+      <a href="https://www.credly.com/badges/83f71a5b-fe55-4203-bf49-da3104ef94c9/public_url">
+        <img src="https://images.credly.com/size/680x680/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/image.png" width="120"/>
+      </a>
+    </td>
+    <td style="padding: 10px;">
+      <a href="https://www.credly.com/badges/65a88407-a1fa-445a-9b6c-5df2c276e756/public_url">
+        <img src="https://images.credly.com/size/680x680/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png" width="120"/>
+      </a>
+    </td>
+    <td style="padding: 10px;">
+      <a href="https://www.credly.com/badges/36b56731-5f01-4f64-addd-d0654cca50f7/public_url">
+        <img src="https://images.credly.com/size/680x680/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png" width="120"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+
 ## 🚀 Quick Overview
 
 ```python
@@ -14,11 +36,11 @@ class AboutMe:
         self.name = "Rachit Shivhare"
         self.education = "Sophomore @ Acropolis Institute of Technology"
         self.interests = ["Programming", "Technology", "Problem Solving"]
-        self.currently_learning = ["Python", "C++", "DSA", "JS"]
+        self.currently_learning = ["Python", "PHP", "C++", "DSA", "JS"]
         self.fun_fact = "There are two ways to write error-free programs; only the third one works 😄"
 ```
 
-## 📊 GitHub Statistics
+<!-- ## 📊 GitHub Statistics
 
 <div align="center">
 
@@ -27,19 +49,9 @@ class AboutMe:
 
   
 </div>
+-->
 
-## 💫 About Me
-
-> 🎓 Sophomore at Acropolis Institute of Technology and Research
-> 
-> 💡 Passionate about exploring emerging technologies
-> 
-> 🤝 Love collaborating and sharing knowledge
-> 
-> 🌱 Quick learner and self-motivated individual
-> 
-> 🎯 Always seeking opportunities for growth
-
+<!--
 ## 🛠️ Technical Arsenal
 
 <div align="center">
@@ -69,6 +81,7 @@ class AboutMe:
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com)
 
 </div>
+-->
 
 ## 🤝 Let's Connect!
 
