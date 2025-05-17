@@ -15,13 +15,13 @@
       </a>
     </td>
     <td style="padding: 10px;">
-      <a href="https://www.credly.com/badges/65a88407-a1fa-445a-9b6c-5df2c276e756/public_url">
-        <img src="https://images.credly.com/size/680x680/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png" width="120"/>
+      <a href="https://www.credly.com/badges/36b56731-5f01-4f64-addd-d0654cca50f7/public_url">
+        <img src="https://images.credly.com/size/680x680/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png" width="120"/>
       </a>
     </td>
     <td style="padding: 10px;">
-      <a href="https://www.credly.com/badges/36b56731-5f01-4f64-addd-d0654cca50f7/public_url">
-        <img src="https://images.credly.com/size/680x680/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png" width="120"/>
+      <a href="https://www.credly.com/badges/65a88407-a1fa-445a-9b6c-5df2c276e756/public_url">
+        <img src="https://images.credly.com/size/680x680/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png" width="120"/>
       </a>
     </td>
   </tr>
